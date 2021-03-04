@@ -21,7 +21,7 @@ jobs:
      - name: Checkout master Branch
        uses: actions/checkout@v2
        with:
-        ref: 'main'
+        ref: 'master'
 
      - name: Start SSH via tmate
        uses: P3TERX/ssh2actions@main

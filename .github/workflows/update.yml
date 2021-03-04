@@ -1,4 +1,4 @@
-name: Check Package
+name: OpenWrt master Package Update
 
 
 on:

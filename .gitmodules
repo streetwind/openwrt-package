@@ -1,0 +1,3 @@
+[submodule "luci-app-passwall"]
+	path = luci-app-passwall
+	url = https://github.com/xiaorouji/openwrt-passwall.git

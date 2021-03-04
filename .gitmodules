@@ -1,0 +1,45 @@
+[submodule "luci-app-adguardhome"]
+	path = luci-app-adguardhome
+	url = https://github.com/kongfl888/luci-app-adguardhome.git
+[submodule "luci-theme-argon"]
+	path = luci-theme-argon
+	url = https://github.com/jerrykuku/luci-theme-argon.git
+[submodule "luci-app-vssr"]
+	path = luci-app-vssr
+	url = https://github.com/jerrykuku/luci-app-vssr.git
+[submodule "luci-app-dockerman"]
+	path = luci-app-dockerman
+	url = https://github.com/lisaac/luci-app-dockerman.git
+[submodule "luci-app-unblockneteasemusic"]
+	path = luci-app-unblockneteasemusic
+	url = https://github.com/cnsilvan/luci-app-unblockneteasemusic.git
+[submodule "openwrt-passwall"]
+	path = openwrt-passwall
+	url = https://github.com/xiaorouji/openwrt-passwall.git
+[submodule "lua-maxminddb"]
+	path = lua-maxminddb
+	url = https://github.com/jerrykuku/lua-maxminddb.git
+[submodule "luci-app-netdata"]
+	path = luci-app-netdata
+	url = https://github.com/MitchWind/luci-app-netdata.git
+[submodule "luci-app-jd-dailybonus"]
+	path = luci-app-jd-dailybonus
+	url = https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+[submodule "luci-app-eqos"]
+	path = luci-app-eqos
+	url = https://github.com/garypang13/luci-app-eqos.git
+[submodule "luci-app-argon-config"]
+	path = luci-app-argon-config
+	url = https://github.com/jerrykuku/luci-app-argon-config.git
+[submodule "luci-app-ttnode"]
+	path = luci-app-ttnode
+	url = https://github.com/jerrykuku/luci-app-ttnode.git
+[submodule "luci-app-wrtbwmon"]
+	path = luci-app-wrtbwmon
+	url = https://github.com/brvphoenix/luci-app-wrtbwmon.git
+[submodule "wrtbwmon"]
+	path = wrtbwmon
+	url = https://github.com/brvphoenix/wrtbwmon.git
+[submodule "ddns-script"]
+	path = ddns-script
+	url = https://github.com/MitchWind/ddns-script.git

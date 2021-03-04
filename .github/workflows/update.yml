@@ -1,0 +1,64 @@
+name: Check Package
+
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'Open SHH'
+        required: true
+        default: true
+  schedule:
+    #每隔30触发
+    - cron:  '*/30 * * * *'
+
+jobs:
+   check:
+     runs-on: ubuntu-latest
+     
+     steps:
+     
+     - name: Checkout master Branch
+       uses: actions/checkout@v2
+       with:
+        ref: 'main'
+
+     - name: Start SSH via tmate
+       uses: P3TERX/ssh2actions@main
+       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+       env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+         
+     - name: update all package
+       run: ./update.sh
+       
+     - name: Set current date
+       run: |
+        sudo timedatectl set-timezone "Asia/Shanghai"
+        echo "NOW=$(date '+%Y-%m-%d-%H:%M:%S')" >> $GITHUB_ENV
+      
+     - name: check for changes
+       run: |
+        if git diff --exit-code; then
+          echo "changes_exist=false" >> $GITHUB_ENV
+        else
+          echo "changes_exist=true" >> $GITHUB_ENV
+        fi
+       
+     - name: Commit files
+       if: env.changes_exist == 'true'
+       run: |
+        git config --local user.email "mofeng64@gmail.com"
+        git config --local user.name "github-actions"
+        git add .
+        git commit -m "update changes ${{ env.NOW }}"
+        git push
+        
+     - name: Delete workflow runs
+       uses: Mattraks/delete-workflow-runs@main
+       with:
+          retain_days: 1
+
+
+

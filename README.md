@@ -8,31 +8,30 @@ wget -P tools/ucl/ https://raw.githubusercontent.com/coolsnowwolf/lede/master/to
 sed -i "38i tools-y += ucl upx" tools/Makefile
 sed -i "40i $\(curdir\)/upx/compile := $\(curdir\)/ucl/compile" tools/Makefile
 ```
-##### [jerrykuku](https://github.com/jerrykuku)大神的包
-- [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon.git)----------------argon主题
-- [luci-app-vssr](https://github.com/jerrykuku/luci-app-vssr.git)----------------------科学插件
-#### [lede](https://github.com/coolsnowwolf/lede)大神的包
-- [luci-app-ssr-plus](https://github.com/fw876/helloworld/tree/master/luci-app-ssr-plus)------------------------Lede大神的科学插件
-- [luci-app-sfe](https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-sfe)
-- [luci-app-vlmcsd](https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-vlmcsd)
-- [luci-app-syncdial](https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-syncdial)
+|插件名|分类|作者|分支|地址|
+|----|----|:----:|:----:|:----:|
+|luci-app-passwall|插件|Lienol|main|[github](https://github.com/xiaorouji/openwrt-passwall.git)|
+|luci-theme-argon|主题|jerrykuku|master|[github](https://github.com/jerrykuku/luci-theme-argon/tree/18.06)|
+|luci-app-vssr|插件|jerrykuku|master|[github](https://github.com/jerrykuku/luci-app-vssr)|
+|lua-maxminddb|依赖|jerrykuku|master|[github](https://github.com/jerrykuku/lua-maxminddb.git)|
+|luci-app-argon-config|插件|jerrykuku|master|[github]( https://github.com/jerrykuku/luci-app-argon-config.git)|
+|luci-app-jd-dailybonus|插件|jerrykuku|master|[github](https://github.com/jerrykuku/luci-app-jd-dailybonus.git)|
+|luci-app-adguardhome|插件|kongfl888|master|[github](https://github.com/kongfl888/luci-app-adguardhome.git)|
+|luci-app-dockerman|插件|lisaac|master|[github](https://github.com/lisaac/luci-app-dockerman.git)|
+|luci-app-unblockneteasemusic|插件|cnsilvan|master|[github](https://github.com/cnsilvan/luci-app-unblockneteasemusic.git)|
+|luci-app-netdata|插件|MitchWind|master|[github](https://github.com/MitchWind/luci-app-netdata.git)|
+|luci-app-eqos|插件|garypang13|master|[github]( https://github.com/garypang13/luci-app-eqos.git)|
+|luci-app-wrtbwmon|插件|brvphoenix|master|[github]( https://github.com/brvphoenix/luci-app-wrtbwmon.git)|
+|wrtbwmon|依赖|brvphoenix|master|[github]( https://github.com/brvphoenix/wrtbwmon.git)|
+|ddns-script|依赖|MitchWind|master|[github]( https://github.com/MitchWind/ddns-script.git)|
+|luci-app-vlmcsd|插件|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-vlmcsd)|
+|vlmcsd|依赖|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/vlmcsd)|
+|luci-app-syncdial|插件|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-syncdial)|
+|luci-app-diskman|插件|lisaac|master|[github]( https://github.com/lisaac/luci-app-diskman/tree/master/applications/luci-app-diskman)|
+|luci-app-control-timewol|插件|Lienol|master|[github]( https://github.com/Lienol/openwrt-package/tree/master/luci-app-control-timewol)|
+|luci-app-uugamebooster|插件|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-uugamebooster)|
+|uugamebooster |依赖|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/uugamebooster)|
+|luci-app-familycloud|插件|lede|master|[github]( https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-familycloud)|
+|Parted|依赖|lisaac|master|[github]( https://github.com/lisaac/luci-app-diskman.git)|
 
-
-#### [Lienol](https://github.com/Lienol) 大神的包
-- [passwall](https://github.com/xiaorouji/openwrt-passwall.git)-----------------------Lienol大神的科学插件
-
-#### 其他大神包
-- [luci-app-dockerman](https://github.com/lisaac/luci-app-dockerman.git)--------------docker管理
-- [luci-app-adguardhome](https://github.com/kongfl888/luci-app-adguardhome.git)------------去广告
-- [luci-app-unblockneteasemusic](https://github.com/cnsilvan/luci-app-unblockneteasemusic.git)-----------------网易云音乐
-- [luci-app-netdata](https://github.com/awesome-openwrt/luci-app-netdata.git)---------------------系统监控
-
-#### 上面包一些依赖关系
-- [ipt2socks-alt](https://github.com/fw876/helloworld/tree/master/ipt2socks-alt)--------------------------luci-app-ssr-plus依赖
-- [redsocks2](https://github.com/coolsnowwolf/lede/tree/master/package/lean/redsocks2)--------------------------luci-app-ssr-plus依赖
-- [fast-classifier](https://github.com/coolsnowwolf/lede/tree/master/package/lean/fast-classifier )--------------------------luci-app-sfe依赖
-- [shortcut-fe](https://github.com/coolsnowwolf/lede/tree/master/package/lean/shortcut-fe)--------------------------luci-app-sfe依赖
-- [vlmcsd](https://github.com/coolsnowwolf/lede/tree/master/package/lean/vlmcsd)--------------------------luci-app-vlmcsd依赖
-- [parted](https://github.com/lisaac/luci-app-diskman)--------------------------luci-app-diskman依赖
-- [AdGuardHome](https://github.com/kenzok8/openwrt-packages/tree/master/AdGuardHome)--------------------------luci-app-adguardhome依赖
 

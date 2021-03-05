@@ -10,7 +10,7 @@ on:
         default: true
   schedule:
     #每隔30触发
-    - cron:  '*/30 * * * *'
+    - cron:  '0,30 * * * *'
 
 jobs:
    check:

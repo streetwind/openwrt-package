@@ -13,12 +13,6 @@
 [submodule "luci-app-unblockneteasemusic"]
 	path = luci-app-unblockneteasemusic
 	url = https://github.com/cnsilvan/luci-app-unblockneteasemusic.git
-[submodule "openwrt-passwall"]
-	path = openwrt-passwall
-	url = https://github.com/xiaorouji/openwrt-passwall.git
-[submodule "lua-maxminddb"]
-	path = lua-maxminddb
-	url = https://github.com/jerrykuku/lua-maxminddb.git
 [submodule "luci-app-netdata"]
 	path = luci-app-netdata
 	url = https://github.com/MitchWind/luci-app-netdata.git
@@ -37,9 +31,15 @@
 [submodule "luci-app-wrtbwmon"]
 	path = luci-app-wrtbwmon
 	url = https://github.com/brvphoenix/luci-app-wrtbwmon.git
-[submodule "wrtbwmon"]
-	path = wrtbwmon
-	url = https://github.com/brvphoenix/wrtbwmon.git
-[submodule "ddns-script"]
-	path = ddns-script
+[submodule "depend/lua-maxminddb"]
+	path = depend/lua-maxminddb
+	url = https://github.com/jerrykuku/lua-maxminddb.git
+[submodule "depend/ddns-script"]
+	path = depend/ddns-script
 	url = https://github.com/MitchWind/ddns-script.git
+[submodule "depend/wrtbwmon"]
+	path = depend/wrtbwmon
+	url = https://github.com/brvphoenix/wrtbwmon.git
+[submodule "luci-app-passwall"]
+	path = luci-app-passwall
+	url = https://github.com/xiaorouji/openwrt-passwall.git

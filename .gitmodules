@@ -8,3 +8,6 @@
 	path = luci-theme-argon
 	url = https://github.com/jerrykuku/luci-theme-argon.git
 	branch = 18.06
+[submodule "depend/lua-maxminddb"]
+	path = depend/lua-maxminddb
+	url = https://github.com/jerrykuku/lua-maxminddb.git

@@ -43,3 +43,6 @@
 [submodule "luci-app-passwall"]
 	path = luci-app-passwall
 	url = https://github.com/xiaorouji/openwrt-passwall.git
+[submodule "depend/wind-settings"]
+	path = depend/wind-settings
+	url = https://github.com/MitchWind/wind-settings.git

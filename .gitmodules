@@ -46,3 +46,6 @@
 [submodule "depend/wind-settings"]
 	path = depend/wind-settings
 	url = https://github.com/MitchWind/wind-settings.git
+[submodule "depend/qBittorrent"]
+	path = depend/qBittorrent
+	url = https://github.com/KryptonLee/qBittorrent-openwrt-package.git

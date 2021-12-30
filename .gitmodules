@@ -19,9 +19,6 @@
 [submodule "luci-app-jd-dailybonus"]
 	path = luci-app-jd-dailybonus
 	url = https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-[submodule "luci-app-eqos"]
-	path = luci-app-eqos
-	url = https://github.com/garypang13/luci-app-eqos.git
 [submodule "luci-app-argon-config"]
 	path = luci-app-argon-config
 	url = https://github.com/jerrykuku/luci-app-argon-config.git
